@@ -10,3 +10,5 @@ print("Hello World")
 print("This works")
 
 print("Ok boomer")
+
+print('If u read this u are idiot')
