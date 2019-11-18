@@ -68,7 +68,3 @@ def k(z):
 
 i= sp.integrate.quad(q,0,z)
 print(Ix)
-
-
-
-
