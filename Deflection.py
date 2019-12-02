@@ -76,10 +76,10 @@ def k(z):
     return -q(z)/h(z)
 
 def succes(z):
-    dv =  sp.integrate.quad(k,0,z)[0]
+    dv =  sp.integrate.quad(k,0.1,z)[0]
     return dv
 
-function = sp.integrate.quad(succes,0,5)
+function = sp.integrate.quad(succes,0.1,5)
 print(function)
 
 
