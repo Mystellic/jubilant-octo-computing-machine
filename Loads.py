@@ -169,6 +169,7 @@ as1, as2, as3 = stress_at_any_point(0, 0.348)
 bs1, bs2, bs3 = stress_at_any_point2(0, 0)
 cs1, cs2, cs3 = stress_at_any_point2(1.55, 0.348)
 
+'''
 plt.subplot(221)
 plt.title("Stress Load Case 1")
 plt.plot(span, s1, label ="Wing box 1")
@@ -213,6 +214,8 @@ plt.grid(True)
 plt.legend()
 plt.subplots_adjust(bottom = 0.1, top = 0.95, hspace = 0.4)
 plt.show()
+'''
+
 
 E = 71*10**9
 
@@ -236,8 +239,9 @@ Am = (0.101*c_interpolate(span)+0.0985*c_interpolate(span))*(0.45*c_interpolate(
 S = 0.101*c_interpolate(span)+0.0985*c_interpolate(span)+2*np.sqrt((0.008625*c_interpolate(span))**(2)+(0.45*c_interpolate(span))**(2))
 dtheta = IntM/(4*Am**2*G)*(S/t)
 totaltheta = integrate.trapz(dtheta, span)
-print(totaltheta*180/sp.pi)
+#print(totaltheta*180/sp.pi)
 
+"""
 plt.plot(span, v)
 plt.title('Deflection of wing')
 plt.axis('equal')
@@ -245,3 +249,4 @@ plt.grid(True)
 plt.show()
 
 plt.plot(span, v2)
+"""
