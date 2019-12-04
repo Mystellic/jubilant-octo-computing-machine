@@ -125,4 +125,4 @@ Topplate = t*(1.5525+0.4*1.5525)*10.8695/2
 Sideplate = t*(0.36+0.4*0.36)*10.8695/2
 Stringer = AS*10.8695
 Weight = dens*(Topplate*2+Sideplate*2+Stringer*n)
-print(Weight)
+#print(Weight)
